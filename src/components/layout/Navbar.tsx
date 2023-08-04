@@ -23,7 +23,7 @@ function Navbar() {
     // },
   ];
   return (
-    <nav className='bg-mainTheme px-2 py-2 text-white md:px-12'>
+    <nav className='primary-theme px-2 py-2 text-white md:px-12'>
       <div className='flex justify-between'>
         <img src={Logo} alt='chess-mastery-logo' className='h-10 w-10 md:h-14 md:w-20' />
         <ul className='flex items-center text-lg font-semibold md:text-xl'>

@@ -4,8 +4,8 @@ import PricingCards from './PricingCards';
 function Pricing() {
   return (
     <section>
-      <div className='mt-20 grid justify-center border'>
-        <h2 className='p-4 text-center text-5xl font-bold'>Pricing</h2>
+      <div className='mt-20 grid justify-center rounded-lg  shadow-lg'>
+        <h2 className='pt-10 text-center font-bold lg:text-6xl'>Pricing</h2>
         <PricingCards />
       </div>
     </section>
