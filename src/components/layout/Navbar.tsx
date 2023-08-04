@@ -23,13 +23,13 @@ function Navbar() {
     // },
   ];
   return (
-    <nav className='bg-mainTheme py-8 md:px-8 px-2 text-white'>
+    <nav className='bg-mainTheme px-2 py-2 text-white md:px-12'>
       <div className='flex justify-between'>
-        <img src={Logo} alt='chess-mastery-logo' className='w-10 h-10 md:w-20 md:h-14' />
-        <ul className='flex md:text-xl text-lg font-semibold items-center'>
+        <img src={Logo} alt='chess-mastery-logo' className='h-10 w-10 md:h-14 md:w-20' />
+        <ul className='flex items-center text-lg font-semibold md:text-xl'>
           {NavLinks.map((item, index) => {
             return (
-              <li key={index} className='px-4 hover:text-zinc-300 cursor-pointer inline-block align-middle'>
+              <li key={index} className='inline-block cursor-pointer px-4 align-middle hover:text-zinc-300'>
                 {item.title}
               </li>
             );

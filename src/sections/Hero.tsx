@@ -1,24 +1,35 @@
-import heroImage from '../assets/chess-black-pawn.jpg';
+// import heroImage from '../assets/chess-black-pawn.jpg';
+import pawnKing from '../assets/pawn-to-king.jpg';
 function Hero() {
-  const greetings = `Welcome to Chess Mastery!`;
+  const greetings = `Chess Mastery`;
+  // const slogan = 'Where minds meet mastery';
+  const slogan = 'Forging grandmasters one move at a time.';
   const introduction = `Whether you're a beginner eager to learn the basics or an experienced player looking to sharpen your skills, Our proficient titled coaches are here to guide you on your chess journey.`;
   const callToAction = `Let's embark on this chess adventure together and unlock your full potential as a chess player!`;
 
   return (
-    <section>
-      <div className='flex flex-col space-y-10'>
-        <span>{greetings}</span>
-        <div className=''>
-          <img
-            src={heroImage}
-            alt='chess-black-pawn'
-            className='md:max-w-lg h-[500] w-[500] rounded shadow-lg shadow-zinc-900'
-          />
-        </div>
-        <div className='flex flex-col space-y-4'>
-          <span>{introduction}</span>
-          <span>{callToAction}</span>
-          <button className='bg-mainTheme rounded p-4 hover:bg-[#4D7F3C]'>Let's get coaching</button>
+    <section className='h-screen'>
+      <div className='flex flex-col justify-center lg:flex-row'>
+        <div className='flex flex-col justify-center text-center '>
+          <div className='space-y-2 text-center font-bold'>
+            <h1 className='text-7xl '>{greetings}</h1>
+            <h2 className='text-5xl '>{slogan}</h2>
+          </div>
+          <div className='flex flex-col space-y-4 pt-14'>
+            {/* <span>{introduction}</span> */}
+            <p className='text-xl'> {callToAction}</p>
+            <div>
+              <button className='rounded bg-mainTheme p-4 hover:bg-[#4D7F3C]'>Join Chess Mastery</button>
+            </div>
+          </div>
+          <div className='flex justify-center pt-14'>
+            <img
+              src={pawnKing}
+              alt='chess-black-pawn'
+              className=' w-full rounded 
+            shadow-lg shadow-zinc-900 md:max-h-[500px] md:max-w-4xl'
+            />
+          </div>
         </div>
       </div>
     </section>
