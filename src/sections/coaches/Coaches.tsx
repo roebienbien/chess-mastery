@@ -1,4 +1,3 @@
-import React from 'react';
 import CoachCards from './CoachCards';
 
 function Coaches() {

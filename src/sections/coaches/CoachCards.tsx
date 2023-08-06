@@ -1,4 +1,3 @@
-import React from 'react';
 import coachList from './coachList';
 
 function CoachCards() {
@@ -8,10 +7,10 @@ function CoachCards() {
     <div className='grid gap-y-10 md:grid-cols-3 md:gap-x-10'>
       {coachList.map((coach, index) => {
         return (
-          <div key={index} className='rounded-lg bg-darkTheme-lightDark  shadow-lg'>
+          <div key={index} className=' rounded-lg bg-darkTheme-lightDark shadow-lg'>
             {/* <div className='aspect-h-1 aspect-w-1 lg:aspect-h-2 lg:aspect-w-2 sm:aspect-1'> */}
             <div className='aspect-square'>
-              <img src={coach.portrait} alt='coach-portrait' className=' rounded-t-lg' />
+              <img src={coach.portrait} alt='coach-portrait' className='max-w-full rounded-t-lg' />
             </div>
             <div>
               {/* <div className='-mt-44 py-2'> */}
