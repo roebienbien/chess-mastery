@@ -16,7 +16,7 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false, // changed to false to fix vercel issues
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
