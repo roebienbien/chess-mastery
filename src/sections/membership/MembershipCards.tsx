@@ -1,20 +1,20 @@
-import priceList from './priceList';
+import membershipList from './membershipList';
 
-function PricingCards() {
+function MembershipCards() {
   return (
     <div className='mt-10 '>
       <ul className='grid space-y-10 lg:flex lg:space-x-10 lg:space-y-0'>
-        {priceList.map((price, index) => {
-          const priceTag = price.price.toLocaleString('en-US');
+        {membershipList.map((membership, index) => {
+          const priceTag = membership.price.toLocaleString('en-US');
           return (
             <li
               key={index}
               className='flex flex-col justify-center rounded-lg bg-darkTheme-lightDark px-32  py-20  shadow-lg'>
               <div className='space-y-4 text-center '>
                 <div className='flex justify-center '>
-                  <price.icon className='text-6xl' />
+                  <membership.icon className='text-6xl' />
                 </div>
-                <h3>{price.name}</h3>
+                <h3>{membership.type}</h3>
                 <h4>₱ {priceTag}</h4>
               </div>
               <div className='mt-4 grid gap-y-8 text-center'>
@@ -29,4 +29,4 @@ function PricingCards() {
   );
 }
 
-export default PricingCards;
+export default MembershipCards;
