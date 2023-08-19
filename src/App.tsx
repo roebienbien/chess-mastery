@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import Layout from './components/layout/Layout';
 import Coaches from './sections/coaches/Coaches';
 import Hero from './sections/Hero';
 import Membership from './sections/membership/Membership';
+import Login from './pages/login/Login';
 
 function App() {
   return (
