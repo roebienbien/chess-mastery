@@ -17,7 +17,9 @@ export default function Login({ visible, onClose }: { visible: boolean; onClose:
       onClick={handleOnClose}
       className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 text-black backdrop-blur-sm'>
       <div className='relative max-w-lg bg-white '>
-        <button className='absolute right-4 top-2 text-right text-xl text-green-500'>x</button>
+        <button onClick={onClose} className='absolute right-4 top-2 text-right text-xl text-green-500'>
+          x
+        </button>
         <div className='rounded-tr-4xl mt-10 bg-white px-10 pb-8 pt-4'>
           <h1 className='text-center text-4xl font-semibold '>Sign In</h1>
           <LoginForm />

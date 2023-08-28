@@ -16,6 +16,9 @@ export default {
           lightDark: '#1c1c1c',
         },
       },
+      backgroundImage: {
+        // kingToKing: 'url(./assets/king-topple-king.jpg)',
+      },
     },
   },
   plugins: [require(`@tailwindcss/aspect-ratio`)],

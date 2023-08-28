@@ -1,4 +1,5 @@
 import Logo from '../../assets/chess-mastery-logo.svg';
+import kingToKing from '../../assets/king-topple-king.jpg';
 function Navbar() {
   type TNavLink = {
     title: string;
@@ -23,7 +24,7 @@ function Navbar() {
     // },
   ];
   return (
-    <nav className='primary-theme px-2 py-2 text-white md:px-12'>
+    <nav className='fixed top-0 z-50 w-full px-2 py-2 text-white md:px-12'>
       <div className='flex justify-between'>
         <img src={Logo} alt='chess-mastery-logo' className='h-10 w-10 md:h-14 md:w-20' />
         <ul className='flex items-center text-lg font-semibold md:text-xl'>
