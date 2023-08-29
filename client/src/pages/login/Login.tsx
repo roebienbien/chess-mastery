@@ -24,7 +24,7 @@ export default function Login({ visible, onClose }: { visible: boolean; onClose:
           <h1 className='text-center text-4xl font-semibold '>Sign In</h1>
           <LoginForm />
           <div className='mt-4 flex items-center justify-center'>
-            <text className='text-black'>Not registered yet?</text>
+            <span className='text-black'>Not registered yet?</span>
             <a
               href='#'
               className='ml-2 text-center text-sm font-medium text-green-600 hover:underline focus:outline-none focus:ring-2 focus:ring-green-500'>

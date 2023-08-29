@@ -17,21 +17,20 @@ function Hero() {
 
   return (
     <section className='text-white'>
-      {/* <div style={{ backgroundImage: `url(${kingToKing})` }} className='relative h-screen bg-cover bg-no-repeat'> */}
-      <div style={{ backgroundImage: `url(${kingToKing})` }} className={`h-screen bg-cover bg-no-repeat `}>
-        <div className='grid grid-cols-12 pt-40'>
-          <div className='col-span-7 col-start-6 grid'>
-            <div>
-              <h1 className='bold tracking-widest md:text-7xl'>{greetings}</h1>
-              <h2 className='mt-2 tracking-wide md:text-3xl'>{slogan}</h2>
-            </div>
-            <div className='mt-20'>
-              <p>{callToAction}</p>
-              <button className='mt-2 flex items-center rounded-lg  border-2 border-cyan-400 p-4'>
-                Join Now
-                <AiOutlineArrowRight className='ml-1 fill-cyan-500' />
-              </button>
-            </div>
+      <div
+        style={{ backgroundImage: `url(${kingToKing})` }}
+        className={`flex h-screen items-center justify-start bg-no-repeat object-cover px-10 md:justify-end   lg:bg-cover`}>
+        <div className='grid md:max-w-3xl'>
+          <div>
+            <h1 className='bold text-4xl leading-snug tracking-wider md:text-7xl'>{slogan}</h1>
+            {/* <h2 className='mt-2 text-2xl leading-relaxed tracking-wider md:text-3xl'>{slogan}</h2> */}
+          </div>
+          <div className='mt-20'>
+            <p>{callToAction}</p>
+            <button className='mt-2 flex items-center rounded-lg  border-2 border-cyan-400 p-4'>
+              Join Now
+              <AiOutlineArrowRight className='ml-1 fill-cyan-500' />
+            </button>
           </div>
         </div>
       </div>
@@ -41,19 +40,20 @@ function Hero() {
 
 export default Hero;
 
-//    <div className=VjV'px-10'>
-//     <div className='space-y-3'>
-//       <h1 className='text-5xl font-bold lg:text-8xl'>{greetings}</h1>
-//       <h2 className='font-semibold lg:text-4xl'>{slogan}</h2>
-//     </div>
-//     <div className='pt-12'>
-//       <p>{callToAction}</p>
-//       <div className='mt-4'>
-//         <button onClick={() => setShowLogin(true)} className='primary-theme primary-hover rounded-lg p-4 '>
-//           Join Chess Mastery
+// <div style={{ backgroundImage: `url(${kingToKing})` }} className={`h-screen bg-cover bg-no-repeat `}>
+//   <div className='grid grid-cols-12 pt-40'>
+//     <div className='col-span-7 col-start-6 grid'>
+//       <div>
+//         <h1 className='bold tracking-widest md:text-7xl'>{greetings}</h1>
+//         <h2 className='mt-2 tracking-wide md:text-3xl'>{slogan}</h2>
+//       </div>
+//       <div className='mt-20'>
+//         <p>{callToAction}</p>
+//         <button className='mt-2 flex items-center rounded-lg  border-2 border-cyan-400 p-4'>
+//           Join Now
+//           <AiOutlineArrowRight className='ml-1 fill-cyan-500' />
 //         </button>
 //       </div>
 //     </div>
 //   </div>
 // </div>
-// {/* <Login visible={showLogin} onClose={handleOnClose} /> */}
