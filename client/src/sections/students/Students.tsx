@@ -11,7 +11,7 @@ function Students() {
           {studentList.map((student, index) => {
             return (
               <tr key={index} className='odd:bg-blue-400 even:bg-red-400'>
-                <td className='h-16'></td>
+                <td className='h-16'>{student.name}</td>
               </tr>
             );
           })}
