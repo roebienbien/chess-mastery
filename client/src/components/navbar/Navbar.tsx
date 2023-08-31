@@ -31,7 +31,7 @@ function Navbar() {
     setIsOpen((isOpen) => !isOpen);
   };
   return (
-    <header className='blur-backdrop-filter  sticky top-0 z-10 w-full bg-zinc-900 bg-opacity-80 bg-clip-padding py-2 text-white sm:bg-blue-900 md:bg-red-900 md:px-12 lg:bg-green-900 xl:bg-cyan-900 2xl:bg-violet-900'>
+    <header className='blur-backdrop-filter  sticky top-0 z-10  w-full bg-zinc-900 bg-opacity-80 bg-clip-padding py-2 text-white min-[320px]:bg-red-300 min-[375px]:bg-cyan-300 min-[425px]:bg-amber-600 sm:bg-blue-900 md:bg-red-900 md:px-12 lg:bg-green-900 xl:bg-cyan-900 2xl:bg-violet-900'>
       <nav className=' hidden justify-between md:flex  md:px-0 lg:px-20 xl:px-32'>
         <div className='flex items-center'>
           <img src={Logo} alt='chess-mastery-logo' className='h-8 w-8 fill-cyan-500' />
@@ -48,7 +48,7 @@ function Navbar() {
           <button className='ml-20'>Sign up</button>
         </ul>
       </nav>
-      <nav className='flex justify-between md:hidden'>
+      <nav className='flex justify-between px-4 md:hidden'>
         <div className='flex items-center'>
           <img src={Logo} alt='chess-mastery-logo' className='h-8 w-8 fill-cyan-500' />
           <span className='-ml-2 text-xl font-bold tracking-wide'>Chess Mastery</span>
