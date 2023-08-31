@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import kingToKing from '../assets/king-topple-king.jpg';
 import Login from '../pages/login/Login';
-import Navbar from '../components/layout/Navbar';
+import Navbar from '../components/navbar/Navbar';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import Membership from './membership/Membership';
 import Coaches from './coaches/Coaches';

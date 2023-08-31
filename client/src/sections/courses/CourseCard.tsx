@@ -5,7 +5,7 @@ import { FaChessKing } from 'react-icons/fa';
 
 function CourseCard() {
   return (
-    <div className='mt-10 flex flex-col justify-center '>
+    <div className='my-10 flex flex-col justify-center '>
       {CourseList.map((course, index) => {
         return (
           <div key={index} className='relative mx-auto my-10 max-w-xs bg-zinc-900 md:flex  md:max-w-4xl '>

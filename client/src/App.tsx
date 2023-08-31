@@ -4,7 +4,7 @@ import Coaches from './sections/coaches/Coaches';
 import Hero from './sections/Hero';
 import Membership from './sections/membership/Membership';
 import Login from './pages/login/Login';
-import Navbar from './components/layout/Navbar';
+import Navbar from './components/navbar/Navbar';
 import Proposition from './sections/proposition/Proposition';
 import Courses from './sections/courses';
 
