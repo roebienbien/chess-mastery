@@ -20,4 +20,9 @@
     @apply absolute -top-3.5 left-0 text-sm text-gray-600 transition-all;
     /* @apply absolute -top-4.5 left-0 text-sm text-gray-600 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-401 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-gray-600; */
   }
+
+  .blur-backdrop-filter {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px); /*for other web browsers */
+  }
 }

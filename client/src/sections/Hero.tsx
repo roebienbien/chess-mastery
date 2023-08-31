@@ -8,7 +8,8 @@ import Coaches from './coaches/Coaches';
 
 function Hero() {
   const greetings = `Chess Mastery`;
-  const slogan = 'Forging grandmasters one move at a time.';
+  const slogan = 'Training grandmasters one move at a time.';
+  // const slogan = 'Bringing out the grandmaster in you one move at a time.';
   const callToAction = `Let's embark on this chess adventure together.`;
 
   const [showLogin, setShowLogin] = useState(false);
@@ -19,12 +20,11 @@ function Hero() {
     <section className='text-white'>
       <div
         style={{ backgroundImage: `url(${kingToKing})` }}
-        className={`flex h-screen items-center justify-start bg-no-repeat object-cover px-10 md:justify-end   lg:bg-cover`}>
-        <div className='grid md:max-w-3xl'>
-          <div>
-            <h1 className='bold text-4xl leading-snug tracking-wider md:text-7xl'>{slogan}</h1>
-            {/* <h2 className='mt-2 text-2xl leading-relaxed tracking-wider md:text-3xl'>{slogan}</h2> */}
-          </div>
+        className={`flex h-screen items-center justify-start bg-no-repeat object-cover px-10 md:justify-end lg:bg-cover`}>
+        <div className='sm:mt-40 md:max-w-3xl'>
+          {/* <div className=''> */}
+          <h1 className='bold text-4xl leading-snug tracking-wider sm:text-5xl md:text-7xl'>{slogan}</h1>
+          {/* </div> */}
           <div className='mt-20'>
             <p>{callToAction}</p>
             <button className='mt-2 flex items-center rounded-lg  border-2 border-cyan-400 p-4'>

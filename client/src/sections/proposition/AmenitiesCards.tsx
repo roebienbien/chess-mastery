@@ -3,7 +3,7 @@ import Amenities from './amenities';
 
 function AmenitiesCards() {
   return (
-    <div className='mt-10 flex flex-col md:flex-row md:justify-center '>
+    <div className='mt-10 flex flex-col space-y-10 md:flex-row md:justify-center md:space-y-0'>
       {Amenities.map((amenity, index) => {
         const AmenityIcon = amenity.icon;
         return (

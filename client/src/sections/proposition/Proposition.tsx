@@ -10,7 +10,7 @@ function Proposition() {
     ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Est expedita a adipisci aut autem aperiam. Cum reprehenderit minima dicta dolorem?';
   return (
     <section>
-      <div className={` flex h-screen items-center justify-center bg-cover bg-no-repeat pt-36 `}>
+      <div className={` my-10 flex items-center justify-center bg-cover bg-no-repeat pt-36 `}>
         <div className='flex flex-col justify-center opacity-100'>
           <h2 className='text-center text-4xl font-semibold tracking-wider md:text-7xl'>Why Choose Us?</h2>
           <p className='mt-4 max-w-md px-4 text-center leading-relaxed tracking-wider md:max-w-7xl md:text-2xl'>
