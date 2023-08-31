@@ -16,7 +16,7 @@ function App() {
       {/* <div className=' bg-darkTheme-dark px-10 py-10 text-white '> */}
       <Proposition />
       <Courses />
-      <Students />
+      {/* <Students /> */}
       {/* <Coaches /> */}
       {/* <Membership /> */}
       {/* </div> */}

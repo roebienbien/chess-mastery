@@ -1,7 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+import _defaultTheme from 'tailwindcss/defaultTheme';
+
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      xs: '420px',
+      ..._defaultTheme.screens,
+    },
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -15,9 +22,6 @@ export default {
           dark: '#121212',
           lightDark: '#1c1c1c',
         },
-      },
-      backgroundImage: {
-        // kingToKing: 'url(./assets/king-topple-king.jpg)',
       },
     },
   },

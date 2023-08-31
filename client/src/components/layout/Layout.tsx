@@ -4,7 +4,7 @@ import Navbar from '../navbar/Navbar';
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className='font-poppins'>
+    <div className='overflow-y-hidden font-poppins'>
       <Navbar />
       {children}
       <Footer />
