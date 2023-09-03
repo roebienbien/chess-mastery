@@ -1,4 +1,4 @@
-import CoachCards from './CoachCards';
+import CoachCards from './fillCard';
 
 function Coaches() {
   const sectionTitle = `Let's meet the Coaches`;

@@ -1,4 +1,4 @@
-import coachList from './coachList';
+import coachList from './filllist';
 
 function CoachCards() {
   const introduction =
@@ -10,7 +10,7 @@ function CoachCards() {
           <div key={index} className=' rounded-lg bg-darkTheme-lightDark shadow-lg'>
             {/* <div className='aspect-h-1 aspect-w-1 lg:aspect-h-2 lg:aspect-w-2 sm:aspect-1'> */}
             <div className='aspect-square'>
-              <img src={coach.portrait} alt='coach-portrait' className='max-w-full rounded-t-lg' />
+              {/* <img src={coach.portrait} alt='coach-portrait' className='max-w-full rounded-t-lg' /> */}
             </div>
             <div>
               {/* <div className='-mt-44 py-2'> */}

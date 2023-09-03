@@ -1,5 +1,6 @@
 import React from 'react';
-import studentList from './coach-list';
+import coachList from './coach-list';
+import CoachCard from './CoachCard';
 
 function Coaches() {
   const coachIntro = 'These brilliant minds will surely help you ';
@@ -14,25 +15,7 @@ function Coaches() {
             <span className='self-center md:text-6xl'>Meet Your Coaches</span>
           </h1>
           <p className=' text-xs sm:row-start-2 sm:self-center'>{coachIntro}</p>
-          {studentList.map((student, index) => {
-            return (
-              <div>
-                <div
-                  key={index}
-                  style={{ backgroundImage: `url(${student.portrait})` }}
-                  className={`${student.color} sm:square h-16 bg-cover bg-no-repeat shadow-xl  backdrop-grayscale sm:h-auto`}
-                />
-                <div className='mt-2 flex items-center justify-center space-x-1'>
-                  <h2 className='text-center text-lg '>
-                    <span className='mr-1 rounded bg-cyan-500 px-1 font-bold'>{student.title}</span>
-                    {student.name}
-                    <span className='ml-1'>({student.rating})</span>
-                  </h2>
-                  <img src={student.flag} alt='country-flag' className='h-4 w-4' />
-                </div>
-              </div>
-            );
-          })}
+          <CoachCard />
         </div>
       </div>
     </section>
@@ -40,3 +23,14 @@ function Coaches() {
 }
 
 export default Coaches;
+
+// <div
+//   key={index}
+//   style={{ backgroundImage: `url(${student.portrait})`, boxShadow: '2px 2px #cec7c759' }}
+//   className={`from sm:square h-16 bg-gradient-to-b from-cyan-600 bg-cover bg-no-repeat shadow-lg backdrop-grayscale sm:h-auto`}
+// />
+
+// <div
+//   className={`sm:square relative h-16 overflow-hidden ${coach.color} bg-gradient-to-b bg-cover bg-no-repeat shadow-lg backdrop-grayscale sm:h-auto`}>
+//   <img src={coach.portrait} alt='coach-portrait' className='object-cover shadow-xl' />
+// </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Layout from './components/layout/Layout';
-import Coaches from './sections/fill/Coaches';
+import Coaches from './sections/fill/FillCoache';
 import Hero from './sections/Hero';
 import Membership from './sections/membership/Membership';
 import Login from './pages/login/Login';

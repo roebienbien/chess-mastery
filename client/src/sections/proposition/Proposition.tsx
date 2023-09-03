@@ -23,17 +23,3 @@ function Proposition() {
 }
 
 export default Proposition;
-
-// <section>
-//   <div className='my-96 flex h-screen items-center justify-center'>
-//     <div className='grid justify-items-center opacity-100'>
-//       <h2 className='text-center text-3xl font-bold tracking-wide xs:text-4xl sm:text-6xl md:text-7xl'>
-//         Why Choose Us?
-//       </h2>
-//       <p className=' mt-2  max-w-xs px-2 text-center text-sm leading-relaxed tracking-wider sm:max-w-lg sm:text-base'>
-//         {proposition}
-//       </p>
-//       <AmenitiesCards />
-//     </div>
-//   </div>
-// </section>

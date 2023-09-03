@@ -31,7 +31,8 @@ function Navbar() {
     setIsOpen((isOpen) => !isOpen);
   };
   return (
-    <header className='blur-backdrop-filter  fixed top-0 z-10  w-full bg-zinc-900 bg-opacity-80 bg-clip-padding py-2 text-white xs:bg-red-500 sm:bg-orange-500 md:bg-yellow-500 md:px-12 lg:bg-green-900 xl:bg-blue-900 2xl:bg-violet-900'>
+    // <header className='blur-backdrop-filter  fixed top-0 z-10  w-full bg-zinc-900 bg-opacity-80 bg-clip-padding py-2 text-white xs:bg-red-500 sm:bg-orange-500 md:bg-yellow-500 md:px-12 lg:bg-green-900 xl:bg-blue-900 2xl:bg-violet-900'>
+    <header className='blur-backdrop-filter  fixed top-0 z-10  w-full bg-zinc-900 bg-opacity-80 bg-clip-padding py-2 text-white '>
       <nav className=' hidden justify-between md:flex  md:px-0 lg:px-20 xl:px-32'>
         <div className='flex items-center'>
           <img src={Logo} alt='chess-mastery-logo' className='h-8 w-8 fill-cyan-500' />
